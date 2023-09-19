@@ -51,17 +51,19 @@ figure > img {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
     /* position: relative; */
 }
 
 .app-container {
     flex-grow: 1;
     display: flex;
+    overflow: auto;
 }
 
 .player {
     height: auto;
-    flex-grow: 0;
+    flex-shrink: 0;
     /* position: fixed; */
 }
 
