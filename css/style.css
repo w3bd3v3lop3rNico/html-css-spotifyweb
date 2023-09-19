@@ -1,0 +1,58 @@
+/* default settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    display: inline-block;
+}
+
+figure > img {
+    display: block;
+}
+
+/* media query bootstrap */
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 1400px) {
+
+}
