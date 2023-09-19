@@ -31,6 +31,16 @@ figure > img {
     display: block;
 }
 
+/* palette colori */
+
+:root {
+    --dark: #000000;
+    --dark-blue: #141922;
+    --light-gray: #C1C1C1;
+    --gray: #66686E;
+    --dark-gray: #080B12;
+}
+
 /* media query bootstrap */
 
 @media (min-width: 576px) {
