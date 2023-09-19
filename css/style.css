@@ -93,6 +93,12 @@ figure > img {
 
 .track-name .track-text {
     margin-right: 30px;
+    font-size: 10px;
+}
+
+.track-text .song-title {
+    font-weight: bold;
+    font-size: 15px;
 }
 
 
@@ -142,10 +148,10 @@ figure > img {
     padding: 30px;
 }
 
-.debug .player {
+/* .debug .player {
     border: 1px solid red;
     padding: 30px;
-}
+} */
 
 .debug .main-container {
     border: 1px solid blue;
