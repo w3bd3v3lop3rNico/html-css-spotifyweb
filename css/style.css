@@ -41,15 +41,52 @@ figure > img {
     --dark-gray: #080B12;
 }
 
+/* utility classes */
+
+
+
+/* layouts */
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* position: relative; */
+}
+
+.app-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+.player {
+    height: auto;
+    flex-grow: 0;
+    /* position: fixed; */
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+
 /* media query bootstrap */
 
-@media (min-width: 576px) {
+@media (min-width: 639px) {
+
+    /* layouts */
+
+    .sidebar {
+        max-width: 230px;
+        flex-shrink: 0;
+    
+    }
 
 }
 
 
 @media (min-width: 768px) {
-
+    
 }
 
 
@@ -65,4 +102,31 @@ figure > img {
 
 @media (min-width: 1400px) {
 
+}
+
+/* debug */
+
+.debug#app {
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+.debug .app-container {
+    border: 1px solid orange;
+    padding: 30px;
+}
+
+.debug .player {
+    border: 1px solid red;
+    padding: 30px;
+}
+
+.debug .main-container {
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.debug .sidebar {
+    border: 1px solid blue;
+    padding: 30px;
 }
