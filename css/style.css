@@ -77,7 +77,7 @@ figure > img {
     /* layouts */
 
     .sidebar {
-        max-width: 230px;
+        width: 230px;
         flex-shrink: 0;
     
     }
