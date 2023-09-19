@@ -38,7 +38,8 @@ figure > img {
     --dark-blue: #141922;
     --light-gray: #C1C1C1;
     --gray: #66686E;
-    --dark-gray: #080B12;
+    --dark-gray: #282828;
+    --light: white;
 }
 
 /* utility classes */
@@ -64,11 +65,34 @@ figure > img {
 .player {
     height: auto;
     flex-shrink: 0;
+    display: flex;
     /* position: fixed; */
 }
 
 .main-container {
     flex-grow: 1;
+}
+
+/* player toolbar */
+
+.player.toolbar {
+    background-color: var(--dark-gray);
+    padding: 10px;
+    color: var(--light);
+}
+
+.player.toolbar .tool-content {
+    display: flex;
+    align-items: center;
+}
+
+.track-name .track-fig {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.track-name .track-text {
+    margin-right: 30px;
 }
 
 
