@@ -277,21 +277,11 @@ figure > img {
     margin-bottom: 15px;
 }
 
-.create-playlist {
+.new-playlists .create-playlist {
     display: flex;
     align-items: center;
-    gap: 8px;
 }
 
-.create-playlist .playlist-plus-icon {
-        width: 40px;
-        background-color: var(--gray);
-        color: var(--dark);
-        aspect-ratio: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 .main-tool:hover div {
     color: var(--light);
 }
@@ -381,7 +371,15 @@ figure > img {
         gap: 22px;
     }
 
-    
+    .create-playlist .playlist-plus-icon {
+        width: 40px;
+        background-color: var(--gray);
+        color: var(--dark);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     
 }
