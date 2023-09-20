@@ -66,12 +66,31 @@ figure > img {
     height: auto;
     flex-shrink: 0;
     display: flex;
+    justify-content: space-between;
     /* position: fixed; */
 }
 
 .main-container {
     flex-grow: 1;
 }
+
+.timeline {
+    padding: 10px;
+    width: 100%;
+    min-width: 120px;
+    
+    
+}
+
+.time-line-lg {
+    padding: 4px;
+    width: 100%;
+    opacity: 30%;
+    background-color: var(--light);
+    border-radius: 5%;
+}
+
+
 
 /* player toolbar */
 
@@ -81,7 +100,7 @@ figure > img {
     color: var(--light);
 }
 
-.player.toolbar .tool-content {
+.player .tool-content {
     display: flex;
     align-items: center;
 }
@@ -99,6 +118,33 @@ figure > img {
 .track-text .song-title {
     font-weight: bold;
     font-size: 15px;
+}
+.player .time-setting {
+    flex-direction: column;
+    width: 50%
+}
+
+.time-setting .time-icons {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    align-items: center;
+}
+.time-icons .icon-lg {
+    margin: 0 15px;
+    font-size: 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+}
+
+.time-setting .timebar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
 }
 
 
