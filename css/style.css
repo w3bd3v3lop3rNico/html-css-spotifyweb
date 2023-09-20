@@ -212,6 +212,16 @@ figure > img {
     align-items: center;
 }
 
+/* sidebar */
+
+.sidebar {
+    background-color: var(--dark);
+    color: var(--dark-gray);
+    padding: 0 13px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* media query bootstrap */
 
@@ -272,10 +282,10 @@ figure > img {
     padding: 20px;
 } */
 
-.debug .app-container {
+/* .debug .app-container {
     border: 1px solid orange;
     padding: 30px;
-}
+} */
 
 /* .debug .player {
     border: 1px solid red;
