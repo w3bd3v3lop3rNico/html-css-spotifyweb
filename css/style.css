@@ -274,12 +274,24 @@ figure > img {
 .side-playlists .playlist-title{
     color: var(--light);
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
-/* .side-playlists .main-tool > .main-tool {
-        margin-left: 0;
-    } */
+.create-playlist {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.create-playlist .playlist-plus-icon {
+        width: 40px;
+        background-color: var(--gray);
+        color: var(--dark);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 .main-tool:hover div {
     color: var(--light);
 }
@@ -370,10 +382,6 @@ figure > img {
     }
 
     
-    
-
-
-
 
     
 }
