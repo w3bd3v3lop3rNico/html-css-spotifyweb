@@ -216,10 +216,39 @@ figure > img {
 
 .sidebar {
     background-color: var(--dark);
-    color: var(--dark-gray);
-    padding: 0 13px;
+    color: var(--gray);
+    padding: 5px 13px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+}
+
+.side-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-logo .logo-sm {
+    width: 30px;
+    padding-bottom: 10px;
+}
+
+.side-logo .logo {
+    max-width: 135px;
+    display: none;
+
+}
+
+.side-main-tools .main-tool {
+    margin-bottom: 10px;
+}
+
+.main-tool > i {
+    font-size: 25px;
+}
+
+.main-tool div {
+    display: none;
 }
 
 
@@ -239,6 +268,8 @@ figure > img {
         flex-shrink: 0;
     }
 
+    /* player */
+
     .time-setting .timebar {
         gap: 24px;
     }
@@ -257,6 +288,12 @@ figure > img {
         width: 60px;
         margin-right: 15px;
     }
+
+    /* sidebar */
+
+    
+
+
     
 }
 
@@ -297,7 +334,7 @@ figure > img {
     padding: 30px;
 }
 
-.debug .sidebar {
+/* .debug .sidebar {
     border: 1px solid blue;
     padding: 30px;
-}
+} */
