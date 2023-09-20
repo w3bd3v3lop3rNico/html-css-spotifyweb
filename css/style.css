@@ -40,13 +40,16 @@ figure > img {
     --gray: #66686E;
     --dark-gray: #282828;
     --light: white;
+    --green: #ADFF2F;
 
     --sidebar-width: 230px;
 }
 
 /* utility classes */
 
-
+.grow-1 {
+    flex-grow: 1;
+}
 
 /* layouts */
 
@@ -87,18 +90,16 @@ figure > img {
 /* timeline layout*/
 
 .timeline {
-    width: 100%;
-    min-width: 120px;
+    background-color: rgba(128, 128, 128, 0.301);
+    border-radius: 999px;
+    position: relative;
 }
 
-.time-line-lg {
-    height: 7px;
-    width: 100%;
-    opacity: 30%;
-    background-color: var(--light);
-
-
+.timeline-progress {
+    height: 6px;
     border-radius: 999px;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -116,16 +117,22 @@ figure > img {
     padding: 10px;
 }
 
-.tool-content.track-name {
+.track-name, 
+.track-artist, 
+.track-icons {
+    color: var(--light-gray);
+}
+
+.tool-content.track-descr {
     flex-basis: var(--sidebar-width);
 }
 
-.track-name .track-fig {
+.track-descr .track-fig {
     width: 40px;
     margin-right: 10px;
 }
 
-.track-name .track-text {
+.track-descr .track-text {
     margin-right: 30px;
     font-size: 10px;
 }
@@ -141,25 +148,57 @@ figure > img {
 
 .time-setting .time-icons {
     display: flex;
-    padding: 10px 0;
     gap: 15px;
     align-items: center;
 }
-.time-icons .icon-lg {
-    margin: 0 15px;
-    font-size: 20px;
-    border: 3px solid;
-    border-radius: 50%;
-    width: 30px;
-    text-align: center;
+
+.track-like:hover {
+    color: var(--light);
 }
 
-.time-setting .timebar {
+.track-save:hover {
+    color: var(--light);
+}
+
+.time-icons li {
+    font-size: 30px;
+}
+
+.time-icons .icon-lg {
+    margin: 0 15px;
+    font-size: 30px;
+}
+
+.icon-lg:hover {
+    font-size: 35px;
+}
+
+.timebar {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 10px 0;
     justify-content: center;
+    gap: 14px;
+}
+
+.progress-handler {
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	border-radius: 999px;
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+ .timeline:hover .progress-handler {
+	display: block;
+}
+
+ .timeline:hover .timeline-progress {
+	background-color: var(--green);
 }
 
 .tool-content.audio-video-setting {
@@ -188,8 +227,27 @@ figure > img {
     .sidebar {
         width: var(--sidebar-width);
         flex-shrink: 0;
-    
     }
+
+    .time-setting .timebar {
+        gap: 24px;
+    }
+
+    .track-name,
+    .track-artist,
+    .track-icons > * {
+        display: inline-block;
+    }
+
+    .track-icons > * {
+        margin-right: 10px;
+    }
+
+    .track-descr .track-fig {
+        width: 60px;
+        margin-right: 15px;
+    }
+    
 }
 
 

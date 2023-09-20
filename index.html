@@ -12,6 +12,7 @@
     <main class="app-container">
         <aside class="sidebar">
 
+
         </aside>
         <section class="main-container">
 
@@ -19,7 +20,7 @@
 
     </main>
     <footer class="player toolbar">
-        <ul class="tool-content track-name">
+        <ul class="tool-content track-descr">
             <li class="track-fig">
                 <figure>
                     <img src="./img/sinister.jpeg" alt="">
@@ -28,26 +29,27 @@
             </li>
             <li class="track-text">
                 <div class="album">Sinister</div>
-                <div>Brano</div>
-                <div>Nome</div>
+                <div class="track-name">Brano</div>
+                <div class="track-artist">Nome</div>
             </li>
             <li class="track-icons">
-                <div><i class="fa-regular fa-heart"></i></div>
-                <div><i class="fa-regular fa-folder"></i>
+                <div class="track-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="track-save"><i class="fa-regular fa-folder"></i>
             </li>
         </ul>
         <div class="tool-content time-setting">
             <ul class="time-icons">
                 <li><i class="fa-solid fa-shuffle"></i></li>
                 <li><i class="fa-solid fa-forward-step"></i></li>
-                <li class="icon-lg"><i class="fa-solid fa-play"></i></li>
+                <li class="icon-lg"><i class="fa-regular fa-circle-play"></i></i></li>
                 <li><i class="fa-solid fa-backward-step"></i></li>
                 <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
             </ul>
             <div class="timebar">
                 <div>0:25</div>
-                <div class="timeline">
-                    <div class="time-line-lg"><div class="timeline-sm"></div></div>
+                <div class="timeline grow-1">
+                    <div class="timeline-progress"></div>
+                    <div class="progress-handler"></div>
                 </div>
                 <div>4:35</div>
             </div>
@@ -58,9 +60,9 @@
                 <li><i class="fa-solid fa-bars"></i></li>
                 <li><i class="fa-solid fa-desktop"></i></li>
                 <li><i class="fa-solid fa-volume-high"></i></li>
-                <li class="timeline">
-                    <div class="time-line-lg"><div class="timeline-sm"></div></div>
-
+                <li class="timeline grow-1">
+                    <div class="timeline-progress"></div>
+                    <div class="progress-handler"></div>
                 </li>
             </ul>
         </div>
