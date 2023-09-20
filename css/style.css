@@ -40,6 +40,8 @@ figure > img {
     --gray: #66686E;
     --dark-gray: #282828;
     --light: white;
+
+    --sidebar-width: 230px;
 }
 
 /* utility classes */
@@ -52,14 +54,21 @@ figure > img {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
+    
     /* position: relative; */
+}
+
+#app,
+.app-container,
+.sidebar,
+.main-container,
+.player {
+    overflow: hidden;
 }
 
 .app-container {
     flex-grow: 1;
     display: flex;
-    overflow: auto;
 }
 
 .player {
@@ -67,29 +76,30 @@ figure > img {
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
+    align-items: center;
 }
 
 .main-container {
     flex-grow: 1;
+    overflow: auto;
 }
 
+/* timeline layout*/
+
 .timeline {
-    padding: 10px;
     width: 100%;
     min-width: 120px;
-    
-    
 }
 
 .time-line-lg {
-    padding: 4px;
+    height: 7px;
     width: 100%;
     opacity: 30%;
     background-color: var(--light);
-    border-radius: 5%;
-}
 
+
+    border-radius: 999px;
+}
 
 
 /* player toolbar */
@@ -103,6 +113,11 @@ figure > img {
 .player .tool-content {
     display: flex;
     align-items: center;
+    padding: 10px;
+}
+
+.tool-content.track-name {
+    flex-basis: var(--sidebar-width);
 }
 
 .track-name .track-fig {
@@ -115,7 +130,7 @@ figure > img {
     font-size: 10px;
 }
 
-.track-text .song-title {
+.track-text .album {
     font-weight: bold;
     font-size: 15px;
 }
@@ -126,7 +141,7 @@ figure > img {
 
 .time-setting .time-icons {
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
     gap: 15px;
     align-items: center;
 }
@@ -143,8 +158,19 @@ figure > img {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
     justify-content: center;
+}
+
+.tool-content.audio-video-setting {
+    width: var(--sidebar-width);
+}
+
+.audio-video-setting .audio-video-content {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
 }
 
 
@@ -152,19 +178,18 @@ figure > img {
 
 @media (min-width: 639px) {
 
-    /* layouts */
-
-    .sidebar {
-        width: 230px;
-        flex-shrink: 0;
-    
-    }
-
 }
 
 
 @media (min-width: 768px) {
+
+    /* layouts */
+
+    .sidebar {
+        width: var(--sidebar-width);
+        flex-shrink: 0;
     
+    }
 }
 
 
@@ -184,10 +209,10 @@ figure > img {
 
 /* debug */
 
-.debug#app {
+/* .debug#app {
     border: 1px solid blue;
     padding: 20px;
-}
+} */
 
 .debug .app-container {
     border: 1px solid orange;
