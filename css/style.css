@@ -241,6 +241,7 @@ figure > img {
 
 .side-main-tools .main-tool {
     margin-bottom: 10px;
+    display: flex;
 }
 
 .main-tool > i {
@@ -291,7 +292,34 @@ figure > img {
 
     /* sidebar */
 
-    
+    .side-logo {
+        padding: 20px 0 30px 20px;
+    }
+
+    .side-logo .logo {
+        display: block; 
+        
+    }
+
+    .side-logo .logo-sm {
+        display: none;
+    }
+
+    .side-main-tools {
+        padding-left: 20px;
+    }
+
+    .main-tool div {
+        display: inline-block;
+        margin-left: 8px;
+    }
+
+    .main-tool.library  div{
+        margin-left: 15px;
+
+    }
+
+
 
 
     
