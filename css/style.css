@@ -457,6 +457,7 @@ figure > img {
 
 .playlist-card .card-img {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .playlist-card .card-text {
@@ -466,7 +467,30 @@ figure > img {
 .card-text .card-title {
     color: var(--light);
     font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.card-text .card-descr {
+    color: var(--gray);
+}
+
+.card-img .hover-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7em;
+    color: var(--light);
+    display: none;
+}
+
+.playlist-card .card-img:hover .hover-play {
+    display: block;
+}
+
+
+
+
 
 
 
