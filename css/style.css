@@ -226,6 +226,7 @@ figure > img {
 .side-body {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .side-logo .logo-sm {
@@ -282,6 +283,48 @@ figure > img {
     align-items: center;
 }
 
+.side-footer {
+    /* padding-left: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.side-footer > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.side-footer a {
+    display: none;
+}
+
+.side-footer {
+    margin-bottom: 10px;
+    color: var(--gray);
+}
+
+
+
+
+.install img {
+    width: 20px;
+    display: block;
+}
+
+.username img {
+    width: 25px;
+    background-color: #282828;
+    border-radius: 999px;
+    display: block;
+}
+
+.side-footer hr {
+    display: none;
+}
+
 .main-tool:hover div {
     color: var(--light);
 }
@@ -289,6 +332,8 @@ figure > img {
 .main-tool:hover i {
     color: var(--light-gray);
 }
+
+
 
 
 /* media query bootstrap */
@@ -380,6 +425,28 @@ figure > img {
         justify-content: center;
         align-items: center;
     }
+
+    .side-footer a {
+        display: block;
+    }
+
+    .side-footer {
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    .side-footer hr {
+        width: 100%;
+        display: block;
+    }
+
+    .username a {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--light);
+    }
+
+
 
     
 }
