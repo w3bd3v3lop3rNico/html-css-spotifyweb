@@ -281,6 +281,7 @@ figure > img {
 .new-playlists .create-playlist {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .side-footer {
@@ -323,6 +324,12 @@ figure > img {
 
 .side-footer hr {
     display: none;
+}
+
+
+
+.install:hover a {
+    color: var(--light);
 }
 
 .main-tool:hover div {
@@ -420,6 +427,7 @@ figure > img {
         width: 40px;
         background-color: var(--gray);
         color: var(--dark);
+        font-size: 25px;
         aspect-ratio: 1;
         display: flex;
         justify-content: center;
@@ -444,6 +452,12 @@ figure > img {
         font-size: 20px;
         font-weight: bold;
         color: var(--light);
+    }
+
+    .create-playlist:hover i {
+        color: var(--dark);
+        background-color: var(--light-gray);
+    
     }
 
 
