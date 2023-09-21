@@ -116,6 +116,7 @@ figure > img {
     background-color: var(--dark-gray);
     padding: 10px;
     color: var(--light);
+    max-height: 90px;
 }
 
 .player .tool-content {
@@ -339,6 +340,12 @@ figure > img {
 .main-tool:hover i {
     color: var(--light-gray);
 }
+/* main body */
+
+.main-body {
+    padding-top: 90px;
+    overflow: auto;
+}
 
 /* main banner */
 
@@ -365,6 +372,46 @@ figure > img {
 .banner-cta:hover {
     padding: 13px 40px;
     font-size: 18px;
+}
+
+/* main menu */
+
+.main-menu {
+    width: 100%;
+    padding: 20px 30px;
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-menu .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-items li {
+    padding: 0 10px;
+}
+
+
+.menu-items .menu-item.active:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: var(--green);
+    bottom: -5px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-items a:hover {
+    color: var(--light);
 }
 
 
