@@ -444,6 +444,7 @@ figure > img {
 
 .main-playlist-container {
     padding: 0 30px 0 20px;
+    margin-bottom: 40px;
 }
 
 .main-playlists {
@@ -487,15 +488,6 @@ figure > img {
 .playlist-card .card-img:hover .hover-play {
     display: block;
 }
-
-
-
-
-
-
-
-
-
 
 /* media query bootstrap */
 
@@ -620,7 +612,11 @@ figure > img {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 878px) {
+
+    .col-3 {
+        flex-basis: calc((100% / 12) * 3);
+    }
 
 }
 
@@ -633,6 +629,10 @@ figure > img {
 @media (min-width: 1400px) {
     .row > [class^="col"] {
         padding-left: 15px;
+    }
+
+    .col-2 {
+        flex-basis: calc((100% / 12) * 2);
     }
 
 }
