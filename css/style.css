@@ -92,6 +92,32 @@ figure > img {
 
 .main-container {
     flex-grow: 1;
+    overflow: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > [class^="col"] {
+    padding-left: 10px;
+}
+
+.col-4 {
+    width: 100%;
+}
+    
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+    
+.col-8 {
+    width: 100%;
+}
+    
+.col-12 {
+    width: 100%;
 }
 
 /* timeline layout*/
@@ -414,6 +440,36 @@ figure > img {
     color: var(--light);
 }
 
+/* main playlist */
+
+.main-playlist-container {
+    padding: 0 30px 0 20px;
+}
+
+.main-playlists {
+    row-gap: 10px;
+}
+
+.main-playlist-header {
+    margin-bottom: 30px;
+    color: var(--light);
+}
+
+.playlist-card .card-img {
+    margin-bottom: 20px;
+}
+
+.playlist-card .card-text {
+    text-align: center;
+}
+
+.card-text .card-title {
+    color: var(--light);
+    font-weight: bold;
+}
+
+
+
 
 
 
@@ -551,6 +607,9 @@ figure > img {
 
 
 @media (min-width: 1400px) {
+    .row > [class^="col"] {
+        padding-left: 15px;
+    }
 
 }
 
