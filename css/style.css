@@ -298,10 +298,21 @@ figure > img {
 
 .main-tool.home {
     color: var(--light-gray);
+    position: relative;
 }
 
 .home div {
     color: var(--light);
+}
+
+.side-main-tools .home.active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -4px;
+    height: 100%;
+    width: 4px;
+    background-color: var(--green);
 }
 
 .side-playlists {
