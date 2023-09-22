@@ -65,8 +65,6 @@ figure > img {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    
-    /* position: relative; */
 }
 
 #app,
@@ -120,7 +118,7 @@ figure > img {
     width: 100%;
 }
 
-/* timeline layout*/
+/* component classes*/
 
 .timeline {
     background-color: rgba(128, 128, 128, 0.301);
@@ -133,6 +131,11 @@ figure > img {
     border-radius: 999px;
     width: 25%;
     background-color: rgb(255, 255, 255);
+}
+
+.round-img img{
+    border-radius: 999px;
+    object-fit: cover;
 }
 
 
